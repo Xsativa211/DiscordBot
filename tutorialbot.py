@@ -16,23 +16,23 @@ Clientdiscord = discord.Client()
 
 @client.event
 async def on_ready():
-    await client.change_presence(game=Game(name='My Own Feelings'))
+    await client.change_presence(game=Game(name='Ragnarok Mobile'))
     print('Working na po') 
 
 
 @client.event
 async def on_message(message):
-    if message.content == 'g!':
+    if message.content == '!pker':
         await client.send_message(message.channel,'Syempre ahh!')
 
 @client.event
 async def on_message(message):
-    if message.content == '!g!2':
+    if message.content == '!pker2':
         await client.send_message(message.channel,'@forallpeople03#1592, Hello sa iyo!')
 
 @client.event
 async def on_message(message):
-    if message.content == '!g!3':
+    if message.content == '!pker3':
         await client.send_message(message.channel,'tol, I don’t know what the FUCK you did. Sumisigaw yung anak ko sa taas, “Daddy! Daddy! Daddy!” Sabi ko, “Anak, bakit?” HAH? “Si tito Pker hindi ko alam nakatayo nalang jan hawak hawak yung kamay ko."')
         
         
