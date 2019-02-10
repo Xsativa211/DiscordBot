@@ -22,7 +22,7 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if message.content == '@󠀀󠀀Genie#7376 ':
+    if message.content == 'genie':
         await client.send_message(message.channel,'Please do leave her a Direct Message!')
 
 @client.event
