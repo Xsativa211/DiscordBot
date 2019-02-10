@@ -22,13 +22,13 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if message.content == '!pker':
-        await client.send_message(message.channel,'Syempre ahh!')
+    if message.content == '@󠀀󠀀Genie#7376 ':
+        await client.send_message(message.channel,'Please do leave her a Direct Message!')
 
 @client.event
 async def on_message(message):
-    if message.content == '!pker2':
-        await client.send_message(message.channel,'@forallpeople03#1592, Hello sa iyo!')
+    if message.content == '@forallpeople03#1592':
+        await client.send_message(message.channel,'Mehehehehe')
 
 @client.event
 async def on_message(message):
