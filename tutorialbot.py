@@ -16,7 +16,7 @@ Clientdiscord = discord.Client()
 
 @client.event
 async def on_ready():
-    await client.change_presence(game=Game(name='Ragnarok Online Mobile',))
+    await client.change_presence(game=Game(name='Ragnarok Online Mobile'))
     print('Working na po') 
     
 @client.event
@@ -28,16 +28,15 @@ async def on_message(message):
     if message.content == 'Levie':
        await client.send_message(message.channel,'tol, I don’t know what the FUCK you did. Sumisigaw yung anak ko sa taas, “Daddy! Daddy! Daddy!” Sabi ko, “Anak, bakit?” HAH? “Si tito Pker hindi ko alam nakatayo nalang jan hawak hawak yung kamay ko."')
     if ('Levie') in message.content:
-       await client.delete_message(message)     
-    
-    if message.content == 'Inviation':
-       await client.send_message(message.channel,'Hello maspinadali na ang pagiinvite sa ating Discord server Group!')
-       await client.send_message(message.channel,'Icopy paste lamang ito sa inyong browser https://discord.me/genocidero')
-       await client.send_message(message.channel,'O kaya sabihin ninyo lang na discord.me/genocidero ')
-    if message.content == 'inviation':
-       await client.send_message(message.channel,'Hello maspinadali na ang pagiinvite sa ating Discord server Group!')
-       await client.send_message(message.channel,'Icopy paste lamang ito sa inyong browser https://discord.me/genocidero')
-       await client.send_message(message.channel,'O kaya sabihin ninyo lang na discord.me/genocidero ')
+       await client.delete_message(message)
+    if message.content == '!Invite':
+       await client.send_message(message.channel,'Discord Invitation link\nhttps://discord.me/genocidero')
+    if ('!Invite') in message.content:
+       await client.delete_message(message)
+    if message.content == '!invite':
+       await client.send_message(message.channel,'Discord Invitation link \nhttps://discord.me/genocidero')
+    if ('!invite') in message.content:
+       await client.delete_message(message)    
     
     
 client.run(str(os.environ.get('TOKEN')))
