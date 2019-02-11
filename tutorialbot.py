@@ -18,19 +18,16 @@ Clientdiscord = discord.Client()
 async def on_ready():
     await client.change_presence(game=Game(name='Ragnarok Online Mobile',))
     print('Working na po') 
-
-
-@client.event
-async def on_message(message):
-    if message.content == 'Levie':
-        await client.send_message(message.channel,'tol, I don’t know what the FUCK you did. Sumisigaw yung anak ko sa taas, “Daddy! Daddy! Daddy!” Sabi ko, “Anak, bakit?” HAH? “Si tito Pker hindi ko alam nakatayo nalang jan hawak hawak yung kamay ko."')
-    if ('Levie') in message.content:
-       await client.delete_message(message)
+    
 @client.event
 async def on_message(message):
     if message.content == 'levie':
         await client.send_message(message.channel,'tol, I don’t know what the FUCK you did. Sumisigaw yung anak ko sa taas, “Daddy! Daddy! Daddy!” Sabi ko, “Anak, bakit?” HAH? “Si tito Pker hindi ko alam nakatayo nalang jan hawak hawak yung kamay ko."')
     if ('levie') in message.content:
        await client.delete_message(message)    
+    if message.content == 'Levie':
+       await client.send_message(message.channel,'tol, I don’t know what the FUCK you did. Sumisigaw yung anak ko sa taas, “Daddy! Daddy! Daddy!” Sabi ko, “Anak, bakit?” HAH? “Si tito Pker hindi ko alam nakatayo nalang jan hawak hawak yung kamay ko."')
+    if ('Levie') in message.content:
+       await client.delete_message(message)     
         
 client.run(str(os.environ.get('TOKEN')))
