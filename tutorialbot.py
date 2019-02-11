@@ -13,6 +13,10 @@ Client = discord.client
 client = commands.Bot(command_prefix = '!')
 Clientdiscord = discord.Client()
 
+@client.event
+async def on_ready():
+    await client.change_presence(game=Game(name='Ragnarok Online Mobile',))
+    print('Codes are working perfectly fine! you may use it now!') 
 
 @client.event
 async def on_message(message):
