@@ -25,11 +25,11 @@ async def on_message(message):
     if ('Levie') in message.content:
        await client.delete_message(message)
     if message.content == '!link':
-       await client.send_message(message.channel,'Discord Invitation link\nhttps://discord.me/genocidero')
+       await client.send_message(message.channel,'Discord Invitation link\nhttps://discord.me/GenocideGuild')
     if ('!link') in message.content:
        await client.delete_message(message)
     if message.content == '!Link':
-       await client.send_message(message.channel,'Discord Invitation link \nhttps://discord.me/genocidero')
+       await client.send_message(message.channel,'Discord Invitation link \nhttps://discord.me/GenocideGuild')
     if ('!Link') in message.content:
        await client.delete_message(message)    
     if message.content == '!rules':
