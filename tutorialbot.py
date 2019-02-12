@@ -53,7 +53,7 @@ async def on_message(message):
     if ('!startbot') in message.content:
        await client.delete_message(message)
     if message.content == '!backup':
-       await client.send_message(message.channel,'Bot is backing up | Heroku | Github | server Backedup')
+       await client.send_message(message.channel,'Bot is backing up | Heroku | Github | server has been Back up')
        await client.send_message(message.channel,'You may restart/start Genocide Bot')
     if ('!backup') in message.content:
        await client.delete_message(message)    
