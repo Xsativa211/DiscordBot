@@ -51,7 +51,7 @@ async def on_message(message):
     if message.content == '!Kafra':
         await client.send_message(message.channel,'To use Kafra Bot you must type \n `!db<space><itemname>!` for **example** `!db Poring` \n The bot will search through database with the name poring, and you have to choose a number which type of item you are looking for either \n 1 \n 2 \n 3 \n Simple as that :D')
 
-        if message.content.startswith('!genocide'):
+    if message.content.startswith('!genocide'):
         output = message.content.replace('!genocide ', '')
         await client.send_message(message.channel, ' @here ' + output)    
  
