@@ -20,14 +20,6 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if message.content == 'levie':
-        await client.send_message(message.channel,'tol, I don’t know what the FUCK you did. Sumisigaw yung anak ko sa taas, “Daddy! Daddy! Daddy!” Sabi ko, “Anak, bakit?” HAH? “Si tito Pker hindi ko alam nakatayo nalang jan hawak hawak yung kamay ko."')
-    if ('levie') in message.content:
-       await client.delete_message(message)    
-    if message.content == 'Levie':
-       await client.send_message(message.channel,'tol, I don’t know what the FUCK you did. Sumisigaw yung anak ko sa taas, “Daddy! Daddy! Daddy!” Sabi ko, “Anak, bakit?” HAH? “Si tito Pker hindi ko alam nakatayo nalang jan hawak hawak yung kamay ko."')
-    if ('Levie') in message.content:
-       await client.delete_message(message)
     if message.content == '!link':
        await client.send_message(message.channel,'Discord Invitation link\nhttps://discord.me/GenocideGuild')
     if ('!link') in message.content:
@@ -53,7 +45,9 @@ async def on_message(message):
 
     if message.content.startswith('!genocide'):
         output = message.content.replace('!genocide ', '')
-        await client.send_message(message.channel, ' @here ' + output)    
+        await client.send_message(message.channel, ' @here ' + output)
+    if ('!genocide') in message.content:
+       await client.delete_message(message)        
  
     
     
