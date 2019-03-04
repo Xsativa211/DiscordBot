@@ -49,6 +49,11 @@ async def on_message(message):
     if ('!genocide') in message.content:
        await client.delete_message(message)        
  
+    if message.content.startswith('!br'):
+        output = message.content.replace('!br ', '')
+        await client.send_message(message.channel, ' Hello everyone! ' + output)
+    if ('!br') in message.content:
+       await client.delete_message(message) 
     
     
 client.run(str(os.environ.get('TOKEN')))
