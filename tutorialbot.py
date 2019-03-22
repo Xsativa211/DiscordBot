@@ -51,7 +51,7 @@ async def on_message(message):
  
     if message.content.startswith('!br'):
         output = message.content.replace('!br ', '')
-        await client.send_message(message.channel, ' Yahalloo ' + output)
+        await client.send_message(message.channel, ' :regional_indicator_u: :regional_indicator_p: :regional_indicator_d: :regional_indicator_a: :regional_indicator_t: :regional_indicator_e: ' + output)
     if ('!br') in message.content:
        await client.delete_message(message) 
     
