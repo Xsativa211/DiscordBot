@@ -45,13 +45,13 @@ async def on_message(message):
 
     if message.content.startswith('!genocide'):
         output = message.content.replace('!genocide ', '')
-        await client.send_message(message.channel, ' :regional_indicator_b: :regional_indicator_r: :regional_indicator_o: :regional_indicator_a: :regional_indicator_d: :regional_indicator_c: :regional_indicator_a: :regional_indicator_s: :regional_indicator_t: @everyone ' + output)
+        await client.send_message(message.channel, ' :regional_indicator_b: :regional_indicator_r: :regional_indicator_o: :regional_indicator_a: :regional_indicator_d: :regional_indicator_c: :regional_indicator_a: :regional_indicator_s: :regional_indicator_t: @everyone \n ' + output)
     if ('!genocide') in message.content:
        await client.delete_message(message)        
  
     if message.content.startswith('!br'):
         output = message.content.replace('!br ', '')
-        await client.send_message(message.channel, ' :regional_indicator_u: :regional_indicator_p: :regional_indicator_d: :regional_indicator_a: :regional_indicator_t: :regional_indicator_e: ' + output)
+        await client.send_message(message.channel, ' :regional_indicator_u: :regional_indicator_p: :regional_indicator_d: :regional_indicator_a: :regional_indicator_t: :regional_indicator_e: \n ' + output)
     if ('!br') in message.content:
        await client.delete_message(message) 
     
