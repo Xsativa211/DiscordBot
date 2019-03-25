@@ -45,7 +45,7 @@ async def on_message(message):
 
     if message.content.startswith('!genocide'):
         output = message.content.replace('!genocide ', '')
-        await client.send_message(message.channel, ' \n :regional_indicator_a: :regional_indicator_n: :regional_indicator_n: :regional_indicator_o: :regional_indicator_u: :regional_indicator_n: :regional_indicator_c: :regional_indicator_e: :regional_indicator_m: :regional_indicator_e: :regional_indicator_n: :regional_indicator_t: \n @everyone \n ' + output)
+        await client.send_message(message.channel, ':regional_indicator_h: :regional_indicator_e: :regional_indicator_l: :regional_indicator_l: :regional_indicator_o:  \n :regional_indicator_a: :regional_indicator_n: :regional_indicator_n: :regional_indicator_o: :regional_indicator_u: :regional_indicator_n: :regional_indicator_c: :regional_indicator_e: :regional_indicator_m: :regional_indicator_e: :regional_indicator_n: :regional_indicator_t: \n @everyone \n ' + output)
     if ('!genocide') in message.content:
        await client.delete_message(message)        
     
