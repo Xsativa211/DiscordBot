@@ -49,5 +49,4 @@ async def on_message(message):
     if ('!genocide') in message.content:
        await client.delete_message(message)        
     
-    
 client.run(str(os.environ.get('TOKEN')))
