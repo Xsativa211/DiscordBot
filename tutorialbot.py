@@ -21,11 +21,11 @@ async def on_ready():
 @client.event
 async def on_message(message):
     if message.content == '!link':
-       await client.send_message(message.channel,'Discord Invitation link\nhttps://discord.me/GenocideGuild')
+       await client.send_message(message.channel,'Discord Invitation link\nhttps://discord.me/genocideguild')
     if ('!link') in message.content:
        await client.delete_message(message)
     if message.content == '!Link':
-       await client.send_message(message.channel,'Discord Invitation link \nhttps://discord.me/GenocideGuild')
+       await client.send_message(message.channel,'Discord Invitation link \nhttps://discord.me/genocideguild')
     if ('!Link') in message.content:
        await client.delete_message(message)    
     if message.content == '!rules':
