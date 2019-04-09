@@ -25,9 +25,7 @@ async def on_message(message):
     if ('!link') in message.content:
        await client.delete_message(message)
     if message.content == '!Link':
-       await client.send_message(message.channel,'Discord Invitation link \nhttps://discord.me/genocideguild')
-    if ('!Link') in message.content:
-       await client.delete_message(message)    
+       await client.send_message(message.channel,'Discord Invitation link \nhttps://discord.me/genocideguild')    
     if message.content == '!rules':
        await client.send_message(message.channel,':regional_indicator_r: :regional_indicator_u: :regional_indicator_l: :regional_indicator_e: :regional_indicator_s: \n1: respect OFFICERS and CoMembers\n\n2: bawal Mahiyain.\n\n3: GENDER EQUALITY lalo na may LGBT tayo dito sa guild.\n\n4: bawal din sapilitan nang hihingi ng tulong wait nyo maubos ang CT nila tutulungan din naman nila kayo.\n\n5: Wag Tawagin sa hindi panglan ang isang CoMember.\n\n6: kung meron ka isasali sa guild pasalihin mo muna sa DISCORD.\n\n7: bawal ang mayabang :)\n\n8: Share Knowledge ( dahil hindi ka naman mauubusan nyan ) tulungan mo ung iba.\n\n9: Always Check DISCORD for news and events.\n\n10: Wag ka masyado mag ADIK may BUHAY kapa sa LABAS ng RAGNAROK,. And Mag Enjoy lang tayo ')
     if ('!rules') in message.content:
