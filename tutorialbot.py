@@ -52,6 +52,7 @@ async def on_message(message):
         em.set_thumbnail(url=message.server.icon_url)
         em.add_field(name="!link", value="This command will give you the server's invitation", inline=False)
         em.add_field(name="!rules", value="This  command will give you the server rules", inline=False)
+        em.add_field(name="!kafra", value="Guide on how to use Kafra Bot :)", inline=False)
         em.set_footer(text="Server Discord and Bot Owner Genie#7376")
         await client.send_message(message.channel, embed=em)    
     
