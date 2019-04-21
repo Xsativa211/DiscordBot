@@ -49,7 +49,7 @@ async def on_message(message):
 
     if message.content.startswith("!ghelp"):
         em = discord.Embed(title="Lord Genocide Bot Commands", description="Show you the bot commands available for you!", colour=0xcc780a)
-        em.set_thumbnail(url=message.server.icon_url))
+        em.set_thumbnail(url=message.server.icon_url)
         em.add_field(name="!link", value="This command will give you the server's invitation", inline=False)
         em.add_field(name="!rules", value="This  command will give you the server rules", inline=False)
         em.set_footer(text="Server Discord and Bot Owner Genie#7376")
