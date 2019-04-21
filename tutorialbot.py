@@ -16,7 +16,7 @@ Clientdiscord = discord.Client()
 @client.event
 async def on_ready():
     await client.change_presence(game=Game(name='Ragnarok Online Mobile',))
-    status=discord.Status("idle"))
+    status=discord.Status("dnd"))
     print('Codes are working perfectly fine! you may use it now!') 
 
 @client.event
