@@ -25,4 +25,4 @@ async def on_message(message):
 
     if message.content == 'Upvote Needed:':
        await client.send_message(message.channel,'Me!, salamat soar')
-client.run(str(os.environ.get('Mjg1ODQzMTYzNTg1ODM5MTA3.Xns5wA.BO0SlutWyZB5sMOhOjIwIqyTXEc')))
+client.run(str(os.environ.get('TOKEN')))
